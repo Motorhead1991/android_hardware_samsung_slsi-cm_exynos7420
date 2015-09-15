@@ -19,13 +19,13 @@ LOCAL_PATH := $(call my-dir)
 # hw/<OVERLAY_HARDWARE_MODULE_ID>.<ro.product.board>.so
 include $(CLEAR_VARS)
 
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/hw
+LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_SHARED_LIBRARIES := liblog libcutils libion libutils
 
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../include \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/exynos5-insignal/include
+	$(TOP)/hardware/samsung_slsi-cm/exynos/include \
+	$(TOP)/hardware/samsung_slsi-cm/exynos5/include
 
 LOCAL_SRC_FILES := 	\
 	gralloc.cpp 	\

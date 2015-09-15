@@ -41,17 +41,17 @@ LOCAL_CFLAGS += -DFRONT_ROTATION=$(BOARD_FRONT_CAMERA_ROTATION)
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../include \
 	$(LOCAL_PATH)/../libcamera \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/54xx \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/54xx/JpegEncoderForCamera \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common/Pipes \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common/Activities \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common/Buffers \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/54xx \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/54xx/JpegEncoderForCamera \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/common \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/common/Pipes \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/common/Activities \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/common/Buffers \
 	$(LOCAL_PATH)/../libcamera/Vendor \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_SOC)/include \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_BOARD_PLATFORM)/include \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_BOARD_PLATFORM)/libcamera \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/include \
+	$(TOP)/hardware/samsung_slsi-cm/$(TARGET_SOC)/include \
+	$(TOP)/hardware/samsung_slsi-cm/$(TARGET_BOARD_PLATFORM)/include \
+	$(TOP)/hardware/samsung_slsi-cm/$(TARGET_BOARD_PLATFORM)/libcamera \
 	$(TOP)/hardware/libhardware_legacy/include/hardware_legacy \
 	$(TOP)/vendor/samsung/feature/CscFeature/libsecnativefeature \
 	$(TOP)/bionic \
@@ -104,22 +104,22 @@ include $(CLEAR_VARS)
 
 # HAL module implemenation stored in
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.product.board>.so
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
+LOCAL_MODULE_RELATIVE_PATH := hw
 
 LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/../include \
 	$(LOCAL_PATH)/../libcamera \
 	$(LOCAL_PATH)/../libcamera/Vendor \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/54xx \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/54xx/JpegEncoderForCamera \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common/Pipes \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common/Activities \
-	$(TOP)/hardware/samsung_slsi/exynos/libcamera/common/Buffers \
-	$(TOP)/hardware/samsung_slsi/exynos/include \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_SOC)/include \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_BOARD_PLATFORM)/include \
-	$(TOP)/hardware/samsung_slsi/$(TARGET_BOARD_PLATFORM)/libcamera \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/54xx \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/54xx/JpegEncoderForCamera \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/common \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/common/Pipes \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/common/Activities \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/libcamera/common/Buffers \
+	$(TOP)/hardware/samsung_slsi-cm/exynos/include \
+	$(TOP)/hardware/samsung_slsi-cm/$(TARGET_SOC)/include \
+	$(TOP)/hardware/samsung_slsi-cm/$(TARGET_BOARD_PLATFORM)/include \
+	$(TOP)/hardware/samsung_slsi-cm/$(TARGET_BOARD_PLATFORM)/libcamera \
 	frameworks/native/include \
 	system/media/camera/include
 
