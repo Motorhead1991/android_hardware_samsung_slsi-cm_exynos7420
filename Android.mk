@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_BOARD_PLATFORM), exynos5)
+ifeq ($(TARGET_BOARD_PLATFORM), exynos7)
 ifeq ($(TARGET_SLSI_VARIANT), cm)
 ifeq ($(TARGET_SOC), exynos7420)
 exynos7420_dirs := \
